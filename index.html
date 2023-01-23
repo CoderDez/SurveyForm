@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <!--img id="logo" alt="Slattery's Café Logo" src="images/logo.png"/>-->
+            <img id="logo" alt="Slattery's Café Logo" src="images/logo.png"/>
             <h1 id="title">Survey</h1>
             <p id="description">Thank you for helping us improve our service to our customers!</p>
         </header>
@@ -27,12 +27,13 @@
                 <!-- age -->
                 <fieldset>
                     <label id="age-label" for="age">Age (optional)</label>
-                    <input id="age" type="number" name="age" min="16" max="120" placeholder="age"/>
+                    <input id="age" type="number" name="age" min="16" max="120" placeholder="Enter your age"/>
                 </fieldset>
                 <!-- coffee drinker type -->
                 <fieldset>
                     <p class="question">What kind of coffee drinker are you?</p>
                     <select id="dropdown" name="coffee_drinker_type">
+                        <option selected disabled>Select an option</option>
                         <option value="Enthusiast">Enthusiast</option>
                         <option value="lover">Lover</option>
                         <option value="habitual">Habitual</option>
@@ -43,7 +44,7 @@
                 <!-- recommendation -->
                 <fieldset>
                     <p class="question">Would you recommend Slattery's Café to a friend?</p>
-                    <div class="radio-buttons">
+                    <div class="radio-buttons-container">
                         <div class="radio-button">
                             <input id="yes" type="radio" name="recommend" checked/>
                             <label for="yes">Yes</label>
@@ -79,6 +80,10 @@
                             <label for="espresso">Espresso</label>
                         </div>
                         <div class="coffee-type">
+                            <input id="flat_white" type="checkbox" name="enjoyed_coffees" value="flat_white"/>
+                            <label for="flat_white">Flat White</label>
+                        </div>
+                        <div class="coffee-type">
                             <input id="iced_coffee" type="checkbox" name="enjoyed_coffees" value="iced_coffee"/>
                             <label for="iced_cofeee">Iced Coffee</label>
                         </div>
@@ -87,17 +92,13 @@
                             <label for="mocha">Mocha</label>
                         </div>
                         <div class="coffee-type">
-                            <input id="flat_white" type="checkbox" name="enjoyed_coffees" value="flat_white"/>
-                            <label for="flat_white">Lattè</label>
-                        </div>
-                        <div class="coffee-type">
                             <input id="frappe" type="checkbox" name="enjoyed_coffees" value="frappe"/>
                             <label for="frappe">Frappè</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <p class="question">What do you like the most about Slattery's Café</p>
+                    <p class="question">What do you like the most about Slattery's Café?</p>
                     <textarea id="feedback"  name="feedback" rows="6" placeholder="We'd love to hear your feedback..."></textarea>
                 </fieldset>
                 <button id="submit" class="btn-submit" type="submit">Submit</button>
