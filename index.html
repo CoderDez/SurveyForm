@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey - Slattery's Café</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" src="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <img id="logo" alt="Slattery's Café Logo" src="images/logo.png"/>
+            <h1 id="title">Survey</h1>
+            <p id="description">Thank you for helping us improve our service to our customers!</p>
+        </header>
+        <main>
+            <form id="survey-form" action="#" method="post">
+                <!-- name -->
+                <fieldset>
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" size="20" required/>
+                </fieldset>
+                <!-- email -->
+                <fieldset>
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email" size="20"/>
+                </fieldset>
+                <!-- age -->
+                <fieldset>
+                    <label id="age-label" for="age">Age</label>
+                    <input id="age" type="number" name="age" min="16" max="120" placeholder="age"/>
+                </fieldset>
+                <!-- coffee drinker type -->
+                <fieldset>
+                    <p class="question">What kind of coffee drinker are you?</p>
+                    <select id="dropdown" name="coffee_drinker_type">
+                        <option value="Enthusiast">Enthusiast</option>
+                        <option value="lover">Lover</option>
+                        <option value="habitual">Habitual</option>
+                        <option value="ocassional">Ocassional</option>
+                        <option value="non_fan">Not a fan</option>
+                    </select>
+                </fieldset>
+                <!-- recommendation -->
+                <fieldset>
+                    <p class="question">Would you recommend Slattery's Café to a friend?</p>
+                    <div class="radio-buttons">
+                        <div class="radio-button">
+                            <input id="yes" type="radio" name="recommend"/>
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="radio-button">
+                            <input id="maybe" type="radio" name="recommend"/>
+                            <label for="maybe">Maybe</label>
+                        </div>
+                        <div class="radio-button">
+                            <input id="no" type="radio" name="recommend"/>
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- enjoyed coffees -->
+                <fieldset>
+                    <p class="question">What coffees do you enjoy?</p>
+                    <div class="coffee-types-container">
+                        <div class="coffee-type">
+                            <input  id="latte" type="checkbox" name="enjoyed_coffees" value="latte"/>
+                            <label for="latte">Lattè</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="americano" type="checkbox" name="enjoyed_coffees" value="americano"/>
+                            <label for="americano">Americano</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="cappuccino" type="checkbox" name="enjoyed_coffees" value="cappuccino"/>
+                            <label for="cappuccino">Cappuccino</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="espresso" type="checkbox" name="enjoyed_coffees" value="espresso"/>
+                            <label for="espresso">Espresso</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="iced_coffee" type="checkbox" name="enjoyed_coffees" value="iced_coffee"/>
+                            <label for="iced_cofeee">Iced Coffee</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="mocha" type="checkbox" name="enjoyed_coffees" value="mocha"/>
+                            <label for="mocha">Mocha</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="flat_white" type="checkbox" name="enjoyed_coffees" value="flat_white"/>
+                            <label for="flat_white">Lattè</label>
+                        </div>
+                        <div class="coffee-type">
+                            <input id="frappe" type="checkbox" name="enjoyed_coffees" value="frappe"/>
+                            <label for="frappe">Frappè</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <p class="question">What do you like the most about Slattery's Café</p>
+                    <textarea id="feedback"  name="feedback" placeholder="We'd love to hear your feedback..."></textarea>
+                </fieldset>
+                <button id="submit" type="submit" class="btn-submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
