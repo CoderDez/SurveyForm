@@ -4,11 +4,11 @@
         <title>Survey - Slattery's Café</title>
         <link rel="icon" type="image/x-icon" href="images/logo.png"/>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" src="styles.css"/>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
         <header>
-            <img id="logo" alt="Slattery's Café Logo" src="images/logo.png"/>
+            <!--img id="logo" alt="Slattery's Café Logo" src="images/logo.png"/>-->
             <h1 id="title">Survey</h1>
             <p id="description">Thank you for helping us improve our service to our customers!</p>
         </header>
@@ -26,7 +26,7 @@
                 </fieldset>
                 <!-- age -->
                 <fieldset>
-                    <label id="age-label" for="age">Age</label>
+                    <label id="age-label" for="age">Age (optional)</label>
                     <input id="age" type="number" name="age" min="16" max="120" placeholder="age"/>
                 </fieldset>
                 <!-- coffee drinker type -->
@@ -45,7 +45,7 @@
                     <p class="question">Would you recommend Slattery's Café to a friend?</p>
                     <div class="radio-buttons">
                         <div class="radio-button">
-                            <input id="yes" type="radio" name="recommend"/>
+                            <input id="yes" type="radio" name="recommend" checked/>
                             <label for="yes">Yes</label>
                         </div>
                         <div class="radio-button">
@@ -53,8 +53,8 @@
                             <label for="maybe">Maybe</label>
                         </div>
                         <div class="radio-button">
-                            <input id="no" type="radio" name="recommend"/>
-                            <label for="no">No</label>
+                            <input id="not_sure" type="radio" name="recommend"/>
+                            <label for="not_sure">Not sure</label>
                         </div>
                     </div>
                 </fieldset>
@@ -98,9 +98,9 @@
                 </fieldset>
                 <fieldset>
                     <p class="question">What do you like the most about Slattery's Café</p>
-                    <textarea id="feedback"  name="feedback" placeholder="We'd love to hear your feedback..."></textarea>
+                    <textarea id="feedback"  name="feedback" rows="6" placeholder="We'd love to hear your feedback..."></textarea>
                 </fieldset>
-                <button id="submit" type="submit" class="btn-submit">Submit</button>
+                <button id="submit" class="btn-submit" type="submit">Submit</button>
             </form>
         </main>
     </body>

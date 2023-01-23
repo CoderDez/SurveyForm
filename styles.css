@@ -1,0 +1,66 @@
+:root {
+
+}
+
+/* page header */
+header {
+    position: relative;
+    text-align: center;
+    border: .1em solid black;
+}
+
+header, form {
+    margin: 2.5vh auto;
+}
+
+/* form */
+form {
+    width: 60%;
+    height: auto;
+    border: 1px solid black;
+}
+
+fieldset {
+    padding: 0;
+    width: 80%;
+    margin: 2.5vh auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#name-label, #email-label, #age-label {
+    margin: 1.5% 
+}
+
+#name, #email, #age, #dropdown, #feedback {
+    box-sizing: border-box;
+    padding: 1.5% 2%;
+    margin: 1.5% auto;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.radio-button, .coffee-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.25% .75%;
+    border: 1px solid black;
+}
+
+.radio-button *, .coffee-type * {
+    padding: 1%;
+}
+
+#feedback {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.btn-submit {
+    border-radius: 6px;
+    display: block;
+    margin: 2% auto;
+    width: 80%;
+}
