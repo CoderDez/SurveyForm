@@ -10,3 +10,4 @@ I built this project to put my HTML & CSS skills into practice.
 * A split complementary color scheme generated from the custom logo.
 * Usage of the :before pseudo selector to convey a coffee shop background.
 * CSS flexbox for sleek formatting.
+* A dynamic layout across different viewports using no media queries.
