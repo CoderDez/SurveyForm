@@ -124,6 +124,10 @@ h1, label, p, .btn-submit {
     background-color: var(--split-comp-green);
 }
 
+#name, #email, #age {
+    color: rgb(75, 75, 75);
+}
+
 /* font details */
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -147,10 +151,6 @@ label, input, #dropdown, textarea {
     font-size: 1.15rem;
 }
 
-#name, #email, #age {
-    color: rgb(75, 75, 75);
-}
-
 /* override placeholder style */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(75, 75, 75);
@@ -171,4 +171,171 @@ select:focus,
 textarea:focus {
     outline: none;
 }
+
+@media (max-width: 900px) {
+    /* logo */
+    #logo {
+        max-height: 80%;
+    }
+
+    /* form */
+    form {
+        width: 65%;
+    }
+
+    /* font details */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: 1.025rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: 1.15rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    /* logo */
+    #logo {
+        top: 0;
+        left: 0;
+        max-height: 75%;
+    }
+
+    /* form */
+    form {
+        width: 70%;
+    }
+
+    /* font details */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: .95rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: 1.1rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* logo */
+    #logo {
+        top: -2%;
+        left: -1%;
+        max-height: 65%;
+    }
+
+    /* form */
+    form {
+        width: 75%;
+    }
+
+    /* font details */
+    h1 {
+        font-size: 1.65rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: .8rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: 1rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: .95rem;
+    }
+}
+
+@media (max-width: 475px) {
+    /* logo */
+    #logo {
+        max-height: 60%;
+    }
+
+    /* font details */
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: .65rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: .85rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    /* font details */
+    h1 {
+        font-size: 1.45rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: .6rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: .8rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* font details */
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    #description {
+        font-family: sans-serif, serif;
+        font-size: .55rem;
+    }
+    
+    #name-label, #email-label, #age-label,
+    .question,.btn-submit {
+        font-size: .7rem;
+    }
+    
+    label, input, #dropdown, textarea {
+        font-size: .6rem;
+    }
+}
+
+
 
