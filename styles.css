@@ -267,6 +267,11 @@ textarea:focus {
     label, input, #dropdown, textarea {
         font-size: .95rem;
     }
+
+    [type='checkbox'], 
+    [type='radio'] {
+        transform: scale(0.8);
+    }
 }
 
 @media (max-width: 475px) {
