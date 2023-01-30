@@ -9,5 +9,5 @@ I built this project to put my HTML & CSS skills into practice.
 * Custom Logo positioned using absolute positioning.
 * A complementary color scheme generated from the custom logo.
 * Usage of the :before pseudo selector to convey a coffee shop background.
-* CSS flexbox for sleek formatting.
-* A dynamic layout across different viewports using no media queries.
+* CSS flexbox for sleek formatting.* A dynamic layout across different viewports using no media queries.
+* CSS media queries.
